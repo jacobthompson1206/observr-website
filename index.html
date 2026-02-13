@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Observr.io - Real-time animal visibility tracking for zoos and wildlife reserves. Monitor animal activity, optimise guest experiences, and support conservation.">
+    <title>Observr.io | Animal Visibility Tracking</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <span class="logo-text">Observr<span class="logo-accent">.io</span></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-cta">
+                <a href="#contact" class="btn btn-primary">Contact Us</a>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">Real-Time Wildlife Monitoring</div>
+                <h1>Know when your<br>animals are <span class="gradient-text word-cycle" data-words='["visible", "active", "feeding", "sleeping"]'>visible</span></h1>
+                <p class="hero-subtitle">Real-time animal visibility tracking for zoos and wildlife attractions. Enhance guest experiences, optimise operations, and support animal care with intelligent monitoring.</p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary btn-large">Contact Us</a>
+                    <a href="#how-it-works" class="btn btn-outline btn-large">See How It Works</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="dashboard-preview">
+                    <div class="dashboard-header">
+                        <div class="dots">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <span class="dashboard-title">Enclosure Status — Live</span>
+                    </div>
+                    <div class="dashboard-content-grid">
+                        <div class="enclosure-card visible">
+                            <div class="enclosure-image" style="background-image: url('https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?w=400&h=250&fit=crop')"></div>
+                            <div class="enclosure-info">
+                                <span class="enclosure-name">Elephants</span>
+                                <span class="enclosure-status visible">● Visible</span>
+                                <span class="enclosure-time">Active 2hr 15min</span>
+                                <span class="enclosure-hint">🕐 Visible most of the day</span>
+                            </div>
+                            <div class="enclosure-indicator"></div>
+                        </div>
+                        <div class="enclosure-card not-visible">
+                            <div class="enclosure-image" style="background-image: url('https://images.unsplash.com/photo-1534188753412-3e26d0d618d6?w=400&h=250&fit=crop')"></div>
+                            <div class="enclosure-info">
+                                <span class="enclosure-name">Lions</span>
+                                <span class="enclosure-status not-visible">● Not visible</span>
+                                <span class="enclosure-time">Last seen 1hr ago</span>
+                                <span class="enclosure-hint">🕐 Usually return around 3pm</span>
+                            </div>
+                            <div class="enclosure-indicator"></div>
+                        </div>
+                        <div class="enclosure-card visible">
+                            <div class="enclosure-image" style="background-image: url('https://images.unsplash.com/photo-1547721064-da6cfb341d50?w=400&h=400&fit=crop'); background-position: center top;"></div>
+                            <div class="enclosure-info">
+                                <span class="enclosure-name">Giraffes</span>
+                                <span class="enclosure-status visible">● Visible</span>
+                                <span class="enclosure-time">Active 45min</span>
+                                <span class="enclosure-hint">🕐 Usually visible now</span>
+                            </div>
+                            <div class="enclosure-indicator"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Problem Section -->
+    <section class="problem-section">
+        <div class="container">
+            <div class="section-pill">
+            <div class="problem-content">
+                <h2 class="problem-headline">"I didn't see any animals"</h2>
+                <p class="problem-subtext">The #1 guest complaint. And it's costing you.</p>
+
+                <div class="complaint-cards">
+                    <div class="complaint-card">
+                        <div class="complaint-stars">★☆☆☆☆</div>
+                        <p>"70% of the enclosures were either empty or had animals hidden behind trees. We spent £100 for a family of three and came away very disappointed."</p>
+                    </div>
+                    <div class="complaint-card">
+                        <div class="complaint-stars">★★☆☆☆</div>
+                        <p>"The vast majority of the enclosures appeared completely empty, we barely saw any animals, despite visiting every part of the park."</p>
+                    </div>
+                    <div class="complaint-card">
+                        <div class="complaint-stars">★☆☆☆☆</div>
+                        <p>"For $170 for 3 people I was expecting so much more. Most of the animals we tried to see were not visible."</p>
+                    </div>
+                </div>
+
+                <p class="problem-solution">Observr fixes that.</p>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <div class="section-pill">
+            <div class="section-header">
+                <h2>Intelligent monitoring<br>for modern zoos</h2>
+                <p>Everything you need to track, analyse, and optimise animal visibility.</p>
+            </div>
+            <div class="features-grid features-grid-3">
+                <div class="feature-card">
+                    <div class="feature-icon">👁️</div>
+                    <h3>Real-Time Detection</h3>
+                    <p>Smart cameras detect animal presence in seconds. Know exactly when animals enter viewing areas.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Visibility Analytics</h3>
+                    <p>Track patterns over time. Understand peak visibility hours and optimise operations.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔗</div>
+                    <h3>Flexible Integrations</h3>
+                    <p>Share visibility data across your digital signage, guest apps, websites, and internal systems.</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-section">
+        <div class="container">
+            <div class="section-pill">
+            <div class="section-header">
+                <h2>Simple to deploy,<br>powerful to use</h2>
+                <p>Get up and running in days, not months.</p>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-icon">📷</div>
+                    <h3>Install</h3>
+                    <p>Mount our small camera units at key visibility areas.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-icon">⚙️</div>
+                    <h3>Configure</h3>
+                    <p>Define viewing zones and alert areas for each enclosure.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-icon">🚀</div>
+                    <h3>Go Live</h3>
+                    <p>Instant access to data and real-time tracking.</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- CTA Section -->
+    <section id="contact" class="cta-section">
+        <div class="container">
+            <div class="section-pill">
+            <div class="cta-content">
+                <h2>Ready to see what<br>you've been missing?</h2>
+                <p>Get in touch to learn how Observr can transform your guest experience.</p>
+                <form class="contact-form" action="https://formspree.io/f/mbdaggao" method="POST">
+                    <div class="form-row">
+                        <input type="text" name="name" placeholder="Your name" required>
+                        <input type="email" name="email" placeholder="Work email" required>
+                    </div>
+                    <input type="text" name="organisation" placeholder="Zoo or organisation name" required>
+                    <textarea name="message" placeholder="Tell us about your needs (optional)" rows="3"></textarea>
+                    <button type="submit" class="btn btn-primary btn-large btn-full">Contact Us</button>
+                </form>
+                <p class="cta-note">We'll be in touch within 24 hours</p>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-text">Observr<span class="logo-accent">.io</span></span>
+                    </a>
+                    <p>Intelligent animal visibility tracking for the modern zoo.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">API</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Observr.io. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
