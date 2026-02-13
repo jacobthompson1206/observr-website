@@ -205,24 +205,44 @@ style.textContent = `
 
     /* Mobile menu styles */
     @media (max-width: 768px) {
-        .nav-links.mobile-open,
-        .nav-cta.mobile-open {
+        .nav-links.mobile-open {
             display: flex;
             flex-direction: column;
-            position: absolute;
-            top: 72px;
-            left: 0;
-            right: 0;
+            position: fixed;
+            top: 80px;
+            left: 16px;
+            right: 16px;
             background: #ffffff;
-            padding: 24px;
-            gap: 16px;
-            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+            padding: 20px 24px;
+            gap: 8px;
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+            z-index: 1000;
+            text-align: center;
+        }
+
+        .nav-links.mobile-open a {
+            padding: 12px 0;
+            font-size: 1rem;
         }
 
         .nav-cta.mobile-open {
-            top: auto;
-            padding-top: 0;
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            top: 220px;
+            left: 16px;
+            right: 16px;
+            background: #ffffff;
+            padding: 16px 24px;
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+            z-index: 1000;
+        }
+
+        .nav-cta.mobile-open .btn {
+            width: 100%;
+            text-align: center;
         }
 
         .mobile-menu-btn.active span:nth-child(1) {
